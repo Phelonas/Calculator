@@ -2,6 +2,7 @@ import java.ulti.*;
 public class calculator{
 	public static void main (String []args){
 		Scanner Scanner = new Scanner(System.in);
+
 		System.out.println("Bitte eingeben [+/-] a b:");
 		String operation  = scanner.next();
 		int a = scanner.nextInt();
@@ -10,6 +11,13 @@ public class calculator{
 		if (operation.equals("+")){
 			int result = a+b;
 			System.out.println(a + "+"+b+"="+ result);
+
+		}
+		
+		else if (operation.equals("-")){
+			int result = a-b;
+			System.out.println(a+"-"+ b+"="+result);
+			
 		}
 	}
 }
